@@ -1,5 +1,5 @@
 .bg-image {
-    background-image: url("https://www.pixelstalk.net/wp-content/uploads/images1/1920x1080-industrial-wallpapers.jpg");
+    background-image: url("https://www.pixelstalk.net/wp-content/uploads/images1/1920x1080-industrial-wallpapers-620x343.jpg");
     background-size: cover;
     background-position: upper;
     background-repeat: no-repeat;
@@ -14,6 +14,7 @@
     align-items: center;
     align-self: center;
     align-content: center;
+    height: 450px;
   }
 
   .profile-img {
@@ -227,7 +228,7 @@ table, tr, th, td{
 
 .my-custom-scrollbar {
 position: relative;
-height: 200px;
+height: 300px;
 overflow: auto;
 }
 .table-wrapper-scroll-y {
