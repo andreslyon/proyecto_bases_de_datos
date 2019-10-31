@@ -1,0 +1,451 @@
+pid,nombre,tipo,latitud,longitud,fecha_apertura,operativo
+1,"SolarEdge Technologies, Inc.",Central,"-40,61124533","-71,9763994",18-01-2012,si
+2,Azul S.A.,Central,"-38,3712225","-72,54586882",08-02-1963,si
+3,Franke,Minera,"-46,57220413","-70,5754899",09-04-2016,si
+4,AdvisorShares Market Adaptive Unconstrained Income ETF,Vertedero,"-19,48757504","-73,46582409",06-10-1992,si
+5,Kilroy Realty Corporation,Central,"-45,98246139","-71,80516601",16-09-1962,si
+6,Anheuser-Busch Inbev SA,Central,"-53,79350998","-69,22893626",23-05-1977,si
+7,Clifton Bancorp Inc.,Vertedero,"-46,1348098","-73,54064138",26-02-1952,si
+8,San Gerónimo,Minera,"-50,93885489","-71,78372396",08-10-2018,si
+9,Elenita,Minera,"-51,48257045","-69,73756147",16-12-1997,si
+10,Catamutún,Minera,"-38,22877545","-74,53154567",10-04-2017,si
+11,United States Cellular Corporation,Vertedero,"-46,84178722","-72,6409599",05-02-1993,si
+12,San José,Minera,"-17,08866568","-70,75499991",28-05-1982,si
+13,Isla Guarello,Minera,"-44,52950651","-74,49207624",28-02-1970,si
+14,Las Arenitas,Minera,"-37,93703952","-73,48497148",25-09-1972,si
+15,Park-Ohio Holdings Corp.,Central,"-41,85811607","-72,68224325",12-05-2002,si
+16,The Community Financial Corporation,Vertedero,"-30,33028141","-74,2415504",07-03-1968,si
+17,"National American University Holdings, Inc.",Central,"-44,82845024","-69,71109939",27-02-1959,si
+18,Garrison Capital Inc.,Central,"-42,09990962","-69,28519278",06-09-1955,si
+19,Array BioPharma Inc.,Vertedero,"-34,8282871","-69,65815707",22-12-2006,si
+20,Unisys Corporation,Vertedero,"-31,55130785","-68,11280481",24-04-1976,si
+21,PureFunds ETFx HealthTech ETF,Central,"-18,30750076","-68,71016001",11-09-2016,si
+22,"Dynex Capital, Inc.",Central,"-46,6250247","-71,20320602",01-03-1957,si
+23,Walter Investment Management Corp.,Vertedero,"-53,36045872","-71,65370501",03-09-2012,si
+24,"Avon Products, Inc.",Central,"-42,74645755","-71,60494713",16-02-1978,si
+25,"Clear Channel Outdoor Holdings, Inc.",Central,"-21,93420356","-71,74937316",26-01-1989,si
+26,EQT Corporation,Vertedero,"-24,4253265","-71,77113902",19-08-1985,si
+27,SQM - Mapocho,Minera,"-31,96469031","-69,29279809",08-06-1962,si
+28,Las Cenizas,Minera,"-37,70085343","-73,56228633",23-02-1977,si
+29,"Sportsman's Warehouse Holdings, Inc.",Vertedero,"-46,2616331","-71,64164013",30-03-1990,si
+30,"Xenia Hotels & Resorts, Inc.",Central,"-51,796099","-72,47764133",20-03-2002,si
+31,Lions Gate Entertainment Corporation,Vertedero,"-27,10631744","-70,2652307",15-10-1994,si
+32,Inacesa - El Jilguero,Minera,"-17,44733374","-70,47032369",12-09-1958,si
+33,Don Alberto,Minera,"-32,66658139","-73,34546353",11-05-1979,si
+34,Michilla,Minera,"-27,48280116","-70,56344947",03-02-1956,si
+35,Marine Petroleum Trust,Vertedero,"-30,37095291","-69,93180455",28-04-2019,si
+36,Tuina,Minera,"-45,29357894","-69,17026643",13-12-2007,si
+37,Intracampos,Minera,"-49,82821022","-74,30242654",16-02-1979,si
+38,Westpac Banking Corporation,Vertedero,"-31,50027707","-69,55187546",10-03-1974,si
+39,"Silicon Laboratories, Inc.",Central,"-38,8201632","-70,50291327",07-04-2019,si
+40,E*TRADE Financial Corporation,Central,"-17,69804781","-70,47765396",29-04-1990,si
+41,Toll Brothers Inc.,Central,"-25,45210144","-74,98904326",05-06-1950,si
+42,CMP - Boquerón Chañar,Minera,"-37,4788188","-71,47867599",13-12-1982,si
+43,Peckett,Minera,"-38,13105043","-72,83364805",03-11-1953,si
+44,SL Green Realty Corporation,Vertedero,"-23,08275252","-69,42137751",29-05-1987,si
+45,"Chunghwa Telecom Co., Ltd.",Central,"-16,07171874","-71,26601916",13-11-1959,si
+46,"Forterra, Inc.",Central,"-40,07139215","-70,8392399",16-10-2015,si
+47,Refugio,Minera,"-38,87962997","-71,56971803",14-01-1979,si
+48,"China Lodging Group, Limited",Vertedero,"-30,82234614","-68,38792591",21-09-1950,si
+49,"International Seaways, Inc.",Central,"-24,39457601","-72,24669649",29-08-2010,si
+50,"Financial Engines, Inc.",Central,"-46,38747254","-70,75437214",18-06-1979,si
+51,Nuveen Connecticut Quality Municipal Income Fund,Vertedero,"-50,96642298","-70,49199065",29-05-1955,si
+52,La Coipa,Minera,"-27,59189821","-71,20349032",11-02-1970,si
+53,Dorado,Minera,"-28,39381633","-73,986472",15-12-1953,si
+54,Mackinac Financial Corporation,Central,"-43,64479261","-73,81374064",06-11-1988,si
+55,"Cogentix Medical, Inc.",Vertedero,"-19,95010196","-73,64662812",24-04-1975,si
+56,Cerro Colorado,Minera,"-24,2080116","-68,50685053",14-09-1955,si
+57,Dynatronics Corporation,Central,"-18,63187163","-72,91612967",01-05-1964,si
+58,R.R. Donnelley & Sons Company,Vertedero,"-29,11125862","-71,23158585",26-04-1966,si
+59,Trongol,Minera,"-29,59632621","-73,03948187",21-06-2004,si
+60,"FTI Consulting, Inc.",Central,"-47,14991504","-71,68093803",10-12-1996,si
+61,Inacesa - El Way,Minera,"-35,29287156","-71,086893",03-09-1974,si
+62,"RiverNorth Opportunities Fund, Inc.",Vertedero,"-31,26504384","-68,84962811",21-05-2017,si
+63,AmerisourceBergen Corporation (Holding Co),Vertedero,"-51,24200404","-70,28150702",14-06-2004,si
+64,"Evolving Systems, Inc.",Central,"-52,14362392","-72,16782523",21-01-1991,si
+65,"UMH Properties, Inc.",Central,"-42,64166805","-69,65466815",09-12-1971,si
+66,Arenal,Minera,"-17,15562623","-72,95433214",20-04-2013,si
+67,Suncor EnergyInc.,Central,"-53,43772961","-72,02622649",18-09-1983,si
+68,Elkhorn Commodity Rotation Strategy ETF,Central,"-23,69506956","-69,47807235",02-08-1989,si
+69,La Patagua,Minera,"-23,56366992","-72,74754506",07-11-1990,si
+70,Terreno Realty Corporation,Central,"-51,05668234","-69,94491088",26-11-1995,si
+71,"CenterPoint Energy, Inc.",Central,"-27,46471657","-71,45300923",08-06-1982,si
+72,Enel Generacion Chile S.A.,Central,"-29,99809319","-73,58981351",20-10-1957,si
+73,"Edge Therapeutics, Inc.",Central,"-42,71445035","-70,47732534",31-03-1967,si
+74,"Under Armour, Inc.",Vertedero,"-37,56572452","-72,73158473",25-05-2007,si
+75,El Volcán,Minera,"-30,31364111","-73,4247602",24-03-1960,si
+76,El Soldado,Minera,"-21,53551614","-72,07976852",16-04-2004,si
+77,KT Corporation,Central,"-17,99072303","-73,16470936",12-02-1956,si
+78,ACF - Lagunas,Minera,"-33,13604943","-69,34122626",05-09-1957,si
+79,"First Hawaiian, Inc.",Vertedero,"-37,35857076","-71,31032115",11-10-1987,si
+80,Randgold Resources Limited,Vertedero,"-48,17720516","-73,38634755",30-10-1971,si
+81,III de Atacama Minerals - Aguas Blancas,Minera,"-47,31394603","-71,23903468",19-11-1998,si
+82,Urstadt Biddle Properties Inc.,Central,"-47,18797047","-73,54860045",16-07-1994,si
+83,Chimberos,Minera,"-19,29980419","-70,51275141",01-01-2016,si
+84,"JA Solar Holdings, Co., Ltd.",Vertedero,"-38,70897824","-69,63632309",05-10-2017,si
+85,CMP - Algarrobo,Minera,"-30,07242537","-71,8258599",30-05-1995,si
+86,"Idera Pharmaceuticals, Inc.",Central,"-23,89837221","-68,22308586",07-01-2008,si
+87,Montecristo,Minera,"-42,76191411","-71,15455864",08-06-1961,si
+88,Special Opportunities Fund Inc.,Vertedero,"-22,69430514","-71,58466488",09-09-1968,si
+89,AGCO Corporation,Central,"-51,31250495","-72,09715256",23-04-1963,si
+90,Lenga,Minera,"-19,85382799","-74,1091388",14-07-1980,si
+91,Julia,Minera,"-30,42536025","-70,20419998",23-04-1966,si
+92,"NextEra Energy, Inc.",Central,"-29,20278204","-73,96821118",06-04-1971,si
+93,"Diamond Hill Investment Group, Inc.",Vertedero,"-49,85799239","-72,76516535",25-04-1999,si
+94,Jazz Pharmaceuticals plc,Central,"-23,34368456","-71,94105884",08-12-2004,si
+95,Laguna Siren,Minera,"-24,11799631","-69,35044973",30-04-1986,si
+96,"Universal Stainless & Alloy Products, Inc.",Central,"-47,36444382","-73,38158073",22-01-1958,si
+97,Alhué,Minera,"-41,28151908","-72,89936633",27-04-1977,si
+98,United Insurance Holdings Corp.,Central,"-23,96324697","-68,69023905",18-10-2011,si
+99,Chuquicamata,Minera,"-29,63681473","-69,07867499",21-12-1963,si
+100,Maganeso III de Atacama,Minera,"-32,76774456","-72,94945547",28-02-1954,si
+101,SCL Chemetall,Minera,"-47,20950153","-70,76035423",15-08-1964,si
+102,Galectin Therapeutics Inc.,Vertedero,"-54,87199607","-70,54691361",01-03-2017,si
+103,Yelp Inc.,Vertedero,"-43,11047715","-70,03352768",24-06-1977,si
+104,China Mobile (Hong Kong) Ltd.,Central,"-32,31321107","-69,75707645",21-06-1976,si
+105,Pirquitas,Minera,"-38,73928048","-69,3541644",06-04-2000,si
+106,Collahuasi,Minera,"-43,76417517","-69,46927861",22-08-2003,si
+107,Central Garden & Pet Company,Central,"-33,00192116","-73,80536773",27-10-1962,si
+108,Faride,Minera,"-30,49406062","-70,09795413",07-06-1997,si
+109,María Elisa,Minera,"-46,67054079","-72,97304111",03-03-1997,si
+110,HollyFrontier Corporation,Vertedero,"-39,14820194","-72,40334635",22-11-1983,si
+111,"Recon Technology, Ltd.",Vertedero,"-41,59030839","-69,17650406",09-11-1952,si
+112,JM Global Holding Company,Vertedero,"-46,43036646","-71,41331194",13-02-1957,si
+113,Del Fierro,Minera,"-46,58411776","-73,65920956",01-08-2003,si
+114,"Hub Group, Inc.",Vertedero,"-41,73703364","-71,12153259",02-08-1994,si
+115,Manantial,Minera,"-45,37989704","-69,54898275",17-11-1957,si
+116,Credit Acceptance Corporation,Central,"-31,38911698","-69,24544403",02-06-1965,si
+117,Nuveen AMT-Free Municipal Value Fund,Vertedero,"-22,33954425","-71,6613863",18-11-2004,si
+118,"Mirna Therapeutics, Inc.",Central,"-34,44832831","-73,48296944",23-07-1978,si
+119,"Kura Oncology, Inc.",Central,"-25,22791263","-71,84278768",26-12-1956,si
+120,First Trust Senior Loan Fund ETF,Central,"-45,77912208","-70,46570244",13-07-1986,si
+121,"Ulta Beauty, Inc.",Vertedero,"-24,78193519","-69,05397424",04-09-1985,si
+122,Comcast Corporation,Central,"-23,3210794","-69,03344193",21-01-1999,si
+123,Los Pelambres,Minera,"-42,32243113","-71,80459968",19-04-1972,si
+124,Algorta,Minera,"-53,10318907","-70,05907216",07-10-1959,si
+125,AbbVie Inc.,Vertedero,"-47,65017997","-69,83986866",24-01-2009,si
+126,Virco Manufacturing Corporation,Vertedero,"-54,88657627","-69,5041496",19-12-1998,si
+127,Mantos de la Luna,Minera,"-42,82090275","-69,76150537",04-12-1999,si
+128,"Fiserv, Inc.",Central,"-45,07676689","-71,8082965",17-05-1972,si
+129,Quiborax - Ascotán,Minera,"-23,13717068","-69,95653874",29-02-2008,si
+130,CMP - El Laco,Minera,"-42,8435721","-71,19728748",29-11-2018,si
+131,Tata Motors Ltd,Vertedero,"-28,2179559","-71,50560249",14-10-1991,si
+132,Eaton Vance Corporation,Vertedero,"-47,85400498","-71,1090181",18-02-2005,si
+133,Peabody Energy Corporation,Vertedero,"-48,88509748","-69,13073419",16-07-2017,si
+134,Vanguard Russell 3000 ETF,Vertedero,"-49,69909901","-72,85156322",06-12-1994,si
+135,Voya Global Equity Dividend and Premium Opportunity Fund,Vertedero,"-24,66738408","-73,18711546",14-06-1973,si
+136,First Trust International Multi-Asset Diversified Income Index,Vertedero,"-18,4703499","-68,72721423",11-12-1994,si
+137,First Trust Nasdaq Retail ETF,Vertedero,"-34,24063231","-72,60813666",02-03-1966,si
+138,Orbotech Ltd.,Central,"-27,31596891","-70,96487997",10-03-1959,si
+139,La Perla,Minera,"-49,53720632","-72,44283924",08-11-1992,si
+140,iShares MSCI EM ESG Optimized ETF,Central,"-50,41748466","-71,36958532",06-03-1981,si
+141,PowerShares Golden Dragon China Portfolio,Vertedero,"-28,8698376","-74,6328144",20-09-2010,si
+142,"Texas Capital Bancshares, Inc.",Vertedero,"-18,13731948","-73,45570689",11-06-1964,si
+143,Mantos Blancos,Minera,"-46,1401754","-70,39165648",13-09-2016,si
+144,Choquelimpie,Minera,"-37,96750025","-69,52267617",24-09-1985,si
+145,Novelion Therapeutics Inc.,Central,"-24,66135957","-71,79570962",01-11-2000,si
+146,Double Eagle Acquisition Corp.,Vertedero,"-45,70169924","-72,52887097",16-11-2005,si
+147,Celgene Corporation,Central,"-32,02967643","-72,26932097",25-10-2014,si
+148,El Tesoro,Minera,"-34,62424827","-70,77212716",27-09-1959,si
+149,Altamira,Minera,"-53,0118099","-70,74491312",20-09-1952,si
+150,El Salvador,Minera,"-26,95566592","-70,62948214",30-11-2011,si
+151,Container Store (The),Central,"-34,06870467","-69,2587778",04-09-1997,si
+152,Royal Caribbean Cruises Ltd.,Vertedero,"-41,36405867","-72,88275487",10-10-2018,si
+153,Sierra Miranda,Minera,"-17,05555729","-71,25546485",17-07-1980,si
+154,El Morro,Minera,"-23,74250416","-72,5780991",18-11-1988,si
+155,Pucobre,Minera,"-41,80840469","-70,92042281",31-12-1966,si
+156,Corporate Asset Backed Corp CABCO,Central,"-47,20766107","-69,38848421",02-02-1973,si
+157,"SeaChange International, Inc.",Vertedero,"-20,8146013","-73,43119955",29-01-1953,si
+158,Entercom Communications Corporation,Central,"-43,90538222","-67,93186104",22-06-2006,si
+159,La Marcelina,Minera,"-45,04730088","-68,6226631",27-05-1955,si
+160,Gabriela Mistral,Minera,"-31,31565918","-70,12268731",09-10-2006,si
+161,Arch Capital Group Ltd.,Central,"-31,03868479","-69,42270489",01-05-1980,si
+162,Antucoya,Minera,"-34,8080603","-69,73821998",09-09-1961,si
+163,Carola,Minera,"-22,41636966","-72,69038964",29-11-1976,si
+164,PowerShares KBW High Dividend Yield Financial Portfolio,Central,"-35,14139984","-72,35758798",07-07-2003,si
+165,Spence,Minera,"-46,48103337","-70,46400352",03-01-1989,si
+166,Cerro Blanco,Minera,"-24,54405253","-72,11803136",24-02-1953,si
+167,Haldeman - Sagasca,Minera,"-17,88031716","-70,02811716",23-06-1977,si
+168,Victoria,Minera,"-48,80221815","-72,95778926",12-10-2014,si
+169,L.B. Foster Company,Central,"-38,82480482","-71,58608915",09-05-1992,si
+170,Regal Entertainment Group,Vertedero,"-46,71477133","-71,79620512",20-08-2004,si
+171,Celite - Tana,Minera,"-23,66594089","-68,43100801",11-06-1997,si
+172,iPath US Treasury Long Bond Bear ETN,Central,"-40,35185122","-72,80959953",31-08-2009,si
+173,Cambrex Corporation,Central,"-47,12542695","-72,06503108",15-12-1960,si
+174,Pure Cycle Corporation,Central,"-37,14424689","-72,54907999",19-05-1991,si
+175,Ojos del Salado,Minera,"-27,35831322","-72,08958712",12-12-1997,si
+176,Caupolicán,Minera,"-34,53425139","-74,13740142",26-04-1961,si
+177,EPR Properties,Vertedero,"-43,18864931","-70,99239316",11-05-1960,si
+178,First Trust Emerging Markets Small Cap AlphaDEX Fund,Central,"-30,53557678","-71,02260317",22-09-2003,si
+179,Aircastle Limited,Vertedero,"-46,56347763","-68,72332298",24-05-2013,si
+180,Esperanza,Minera,"-45,38971199","-69,86726192",20-12-1979,si
+181,BLDRS Asia 50 ADR Index Fund,Central,"-31,16445081","-68,37160087",09-01-2018,si
+182,Western Asset Bond Fund,Vertedero,"-26,74654065","-70,42299346",18-03-2001,si
+183,Forum Merger Corporation,Central,"-32,94742502","-73,76307958",29-06-1957,si
+184,Nuveen Michigan Quality Municipal Income Fund,Vertedero,"-50,09388595","-68,48847426",04-12-1982,si
+185,"Discovery Communications, Inc.",Central,"-53,65404297","-73,26718516",30-01-1985,si
+186,Drive Shack Inc.,Vertedero,"-51,33607506","-71,89800211",23-11-1952,si
+187,"Mid-America Apartment Communities, Inc.",Vertedero,"-53,8656465","-72,79450762",18-12-1974,si
+188,STMicroelectronics N.V.,Vertedero,"-43,90888808","-74,4424349",02-12-1982,si
+189,RenaissanceRe Holdings Ltd.,Central,"-24,07761632","-73,52356648",24-06-1968,si
+190,"LTC Properties, Inc.",Central,"-51,29783946","-71,50237003",16-06-2018,si
+191,El Guindo,Minera,"-50,43770014","-73,62178091",29-09-1975,si
+192,Cerro Bayo,Minera,"-21,72358876","-73,86217581",05-11-2016,si
+193,Kite Realty Group Trust,Central,"-46,95808708","-71,09731439",29-04-2014,si
+194,"XO Group, Inc.",Vertedero,"-24,92641372","-72,63476081",22-01-2014,si
+195,SQM Salar,Minera,"-41,90476211","-71,40707744",16-06-2002,si
+196,El Abra,Minera,"-49,12840071","-69,06715874",25-10-1970,si
+197,"Destination XL Group, Inc.",Vertedero,"-51,84366508","-71,45974926",27-11-1982,si
+198,Escondida,Minera,"-40,25595432","-71,1296847",13-08-2018,si
+199,BLDRS Developed Markets 100 ADR Index Fund,Central,"-18,96674942","-72,66627876",29-06-1978,si
+200,Navío,Minera,"-29,02393516","-73,58812257",07-07-1957,si
+201,"Franklin Financial Network, Inc.",Vertedero,"-36,83268638","-71,12683534",13-10-1984,si
+202,Cóndor,Minera,"-45,93308769","-70,27512236",16-12-1987,si
+203,Punta de Lobos - Kanita,Minera,"-48,7080749","-69,02837929",24-08-1978,si
+204,Kamada Ltd.,Central,"-26,85917867","-71,27095578",05-05-1998,si
+205,Marte Lobo,Minera,"-50,73155899","-71,52095482",26-06-2010,si
+206,El Toqui,Minera,"-18,89524832","-73,6547943",20-02-1961,si
+207,Cowen Inc.,Vertedero,"-26,50692326","-69,23982757",26-11-2000,si
+208,"Nutanix, Inc.",Vertedero,"-22,75120305","-73,71128663",03-08-1954,si
+209,Janus Henderson Small Cap Growth Alpha ETF,Vertedero,"-18,6558614","-70,75718455",02-12-1981,si
+210,Chimborazo,Minera,"-50,34084038","-69,96995666",07-04-2001,si
+211,Cerro Casale,Minera,"-54,05804052","-72,16371161",27-06-1984,si
+212,China Cord Blood Corporation,Vertedero,"-24,55756186","-74,09087615",20-10-1968,si
+213,Novanta Inc.,Central,"-18,25662271","-69,48914967",15-08-1958,si
+214,CMP - Los Colorados,Minera,"-29,8906932","-72,36810449",21-08-2015,si
+215,U.S. Energy Corp.,Central,"-37,23816728","-74,43611003",05-02-2001,si
+216,NVIDIA Corporation,Central,"-42,58984705","-71,93645833",11-01-1996,si
+217,"Argos Therapeutics, Inc.",Vertedero,"-36,43390516","-69,29986234",16-07-1990,si
+218,Guaranty Bancorp,Central,"-45,75448464","-70,64443925",31-05-1964,si
+219,Inseego Corp.,Vertedero,"-41,18509248","-70,8563711",26-07-1990,si
+220,Peapack-Gladstone Financial Corporation,Central,"-28,16579053","-74,53948987",07-07-1957,si
+221,"German American Bancorp, Inc.",Central,"-34,82987584","-72,10349722",06-01-1989,si
+222,La Picarda,Minera,"-46,7411032","-70,00575467",05-04-2013,si
+223,"Apple Hospitality REIT, Inc.",Vertedero,"-52,81944746","-70,19279546",26-02-1951,si
+224,"TC PipeLines, LP",Vertedero,"-23,32492091","-68,26543116",04-02-1951,si
+225,"Nustar GP Holdings, LLC",Central,"-20,46904993","-74,09165819",28-12-1982,si
+226,Cosayach - Cala Cala,Minera,"-44,6798846","-68,82300689",28-03-2014,si
+227,Georgia Power Company,Vertedero,"-42,73855109","-70,85971668",13-06-1984,si
+228,PowerShares BuyBack Achievers Portfolio,Central,"-31,74765126","-73,25186772",29-02-1984,si
+229,Costamare Inc.,Vertedero,"-46,42174025","-74,18435217",13-09-1969,si
+230,Gilat Satellite Networks Ltd.,Central,"-45,78367424","-75,38032149",11-05-1955,si
+231,The9 Limited,Central,"-55,54343624","-69,83053791",20-11-1961,si
+232,"Taiwan Fund, Inc. (The)",Vertedero,"-48,08224171","-73,04903485",08-12-2002,si
+233,Entegra Financial Corp.,Vertedero,"-40,87226832","-72,21115048",01-09-1976,si
+234,Torchmark Corporation,Vertedero,"-29,97956124","-71,96526653",07-06-1963,si
+235,SAP SE,Vertedero,"-24,59414909","-72,68571232",21-03-2003,si
+236,"Appliance Recycling Centers of America, Inc.",Central,"-52,80292319","-69,87682299",25-03-1980,si
+237,Punitaqui,Minera,"-43,21815285","-73,07526943",29-02-1976,si
+238,Schwager,Minera,"-45,39717876","-73,82516204",02-09-1992,si
+239,Old Republic International Corporation,Vertedero,"-43,73148185","-69,37467027",21-04-1973,si
+240,"Cleveland BioLabs, Inc.",Vertedero,"-39,31051311","-70,78321928",11-11-1979,si
+241,Pampa Camarones,Minera,"-45,02954045","-68,47397968",22-02-2005,si
+242,Bronce de Petorca,Minera,"-46,76871429","-73,4125935",14-08-1979,si
+243,"Gabelli Equity Trust, Inc. (The)",Vertedero,"-29,09239262","-74,52918534",03-06-1960,si
+244,Cerro Negro,Minera,"-53,47278162","-73,54103596",02-12-1975,si
+245,Andacollo Cobre,Minera,"-35,37694761","-71,53827676",25-07-1951,si
+246,"Meridian Waste Solutions, Inc",Central,"-45,56787716","-67,74744981",21-10-1979,si
+247,"Kayne Anderson Energy Total Return Fund, Inc.",Central,"-23,57398446","-72,00715791",22-11-1979,si
+248,Limoneira Co,Central,"-22,41457701","-69,34907021",23-11-2002,si
+249,"First Financial Bankshares, Inc.",Central,"-49,40819843","-73,44452398",06-02-1969,si
+250,"Cyclacel Pharmaceuticals, Inc.",Central,"-54,06178027","-70,36594979",20-07-2017,si
+251,Crawford & Company,Vertedero,"-54,16098596","-73,44295806",16-08-2005,si
+252,"Delcath Systems, Inc.",Vertedero,"-39,17132517","-72,07184672",04-03-1969,si
+253,"Ashford Hospitality Prime, Inc.",Central,"-45,841688","-74,24113967",27-05-1969,si
+254,"Rush Enterprises, Inc.",Central,"-30,49560682","-73,22249931",21-11-1957,si
+255,GlaxoSmithKline PLC,Vertedero,"-18,47051602","-70,13306378",23-09-1952,si
+256,Great Plains Energy Inc,Vertedero,"-33,39907535","-73,6965027",07-08-1959,si
+257,"Urban One, Inc.",Central,"-22,6316032","-69,88975164",21-11-1999,si
+258,Bed Bath & Beyond Inc.,Vertedero,"-30,41079413","-72,28140068",17-11-1982,si
+259,PIMCO Dynamic Credit and Mortgage Income Fund,Vertedero,"-44,15489593","-73,61271333",19-03-1980,si
+260,Apollo Senior Floating Rate Fund Inc.,Central,"-37,20283556","-73,69478663",25-06-2006,si
+261,Caserones,Minera,"-31,16089173","-70,89554656",11-12-1981,si
+262,Linderos,Minera,"-54,10836128","-72,54131209",15-11-1980,si
+263,Andacollo Oro,Minera,"-39,40655928","-73,12322375",15-07-1975,si
+264,Carvana Co.,Central,"-30,63543452","-68,32490076",16-12-2015,si
+265,Northern Trust Corporation,Vertedero,"-33,29786746","-72,0236178",22-01-1979,si
+266,Celite - Tilviche,Minera,"-47,48083996","-69,78816034",04-09-1965,si
+267,El Teniente,Minera,"-32,10812979","-74,10672937",12-01-1989,si
+268,Neff Corporation,Vertedero,"-45,49644381","-76,14144442",11-12-1973,si
+269,VictoryShares US 500 Enhanced Volatility Wtd ETF,Central,"-29,72839455","-71,02219486",27-09-1970,si
+270,Flor de Los Andes,Minera,"-46,75384618","-71,52360501",25-07-1954,si
+271,Isla Riesco,Minera,"-45,53392116","-74,80555265",13-08-2000,si
+272,First Trust South Korea AlphaDEX Fund,Vertedero,"-24,7683369","-71,8845958",12-11-1991,si
+273,"PDF Solutions, Inc.",Vertedero,"-45,17052541","-69,98027157",28-02-1979,si
+274,Cabot Corporation,Central,"-41,82457563","-70,04926654",29-09-1996,si
+275,Data Processing,Central,"-47,59593324","-72,36669104",27-07-1974,si
+276,Iván,Minera,"-38,11993762","-70,60047994",22-02-1980,si
+277,Cosayach - Negreiros,Minera,"-50,89317516","-69,80606347",16-05-1979,si
+278,Delta,Minera,"-38,54033002","-71,39594038",07-01-1990,si
+279,Silvercrest Asset Management Group Inc.,Central,"-51,64844751","-70,30809486",15-07-1950,si
+280,Tres Valles,Minera,"-22,83237098","-72,19113554",14-10-1998,si
+281,"Enanta Pharmaceuticals, Inc.",Vertedero,"-29,29631515","-73,79609293",06-06-1976,si
+282,"Safe Bulkers, Inc",Vertedero,"-46,75649659","-69,6195718",23-03-1975,si
+283,Pascua,Minera,"-45,84541746","-72,50348538",29-04-1996,si
+284,Biglari Holdings Inc.,Central,"-20,51543241","-74,21582041",07-07-1965,si
+285,"Gray Television, Inc.",Vertedero,"-51,06075258","-74,25340939",06-10-2004,si
+286,"CatchMark Timber Trust, Inc.",Vertedero,"-33,44505908","-72,21041226",20-08-1990,si
+287,Las Piedras,Minera,"-43,10144946","-72,68829782",17-11-1982,si
+288,"Western New England Bancorp, Inc.",Central,"-37,66461088","-70,62854518",18-02-1999,si
+289,"Shutterstock, Inc.",Vertedero,"-23,78497286","-71,87950768",28-11-1986,si
+290,"FSB Bancorp, Inc.",Central,"-23,97880405","-73,25941333",18-05-1970,si
+291,SQM - Pedro de Valdivia,Minera,"-42,57570453","-69,51443977",23-06-1992,si
+292,United Microelectronics Corporation,Central,"-34,30260501","-72,07558777",21-08-1966,si
+293,"Adams Diversified Equity Fund, Inc.",Vertedero,"-23,61028685","-72,34481198",22-04-1960,si
+294,Tranquilo,Minera,"-51,13728473","-73,03610548",14-03-2019,si
+295,Guanaco,Minera,"-22,65293536","-70,66180792",12-06-2008,si
+296,PowerShares Nasdaq Internet Portfolio,Central,"-30,58149323","-68,53531036",21-01-1966,si
+297,Lota,Minera,"-17,96384615","-73,33109039",13-12-2002,si
+298,Diageo plc,Central,"-38,90344507","-68,46931075",26-11-2015,si
+299,El Tofo,Minera,"-46,26421645","-72,1887842",23-04-2016,si
+300,Fair Isaac Corporation,Central,"-19,05572733","-70,1235245",08-04-1952,si
+301,PTC Inc.,Central,"-43,92126064","-70,25055601",30-04-1994,si
+302,E.I. du Pont de Nemours and Company,Vertedero,"-52,58694562","-69,53267975",12-02-1986,si
+303,Stamps.com Inc.,Central,"-32,14490051","-70,02574064",01-11-1982,si
+304,Vina Concha Y Toro,Vertedero,"-42,30241952","-72,4703344",21-03-2010,si
+305,"Tootsie Roll Industries, Inc.",Vertedero,"-29,7891032","-68,88677317",02-12-1971,si
+306,Manto Verde,Minera,"-37,1680669","-71,99358865",15-02-1967,si
+307,"Ellie Mae, Inc.",Central,"-46,02318735","-72,31154556",25-09-2001,si
+308,"The Chefs' Warehouse, Inc.",Vertedero,"-50,31195952","-70,41277162",13-05-2010,si
+309,Quiborax,Minera,"-45,4454804","-69,66660029",04-01-1976,si
+310,"India Fund, Inc. (The)",Vertedero,"-17,04318272","-74,71887529",27-02-1986,si
+311,Gladstone Commercial Corporation,Vertedero,"-55,47742963","-70,28823355",10-03-2010,si
+312,Check-Cap Ltd.,Central,"-19,52616206","-69,96478385",20-09-1960,si
+313,"Investors Bancorp, Inc.",Central,"-50,83989176","-73,62680698",22-04-1976,si
+314,"MasTec, Inc.",Central,"-23,98766982","-72,31728235",06-01-1977,si
+315,Las Pataguas,Minera,"-25,74654418","-72,32445062",25-04-1957,si
+316,Las Luces,Minera,"-53,92453577","-71,07589986",21-12-1974,si
+317,DRDGOLD Limited,Vertedero,"-46,89029091","-70,91828549",26-06-2018,si
+318,Johnson & Johnson,Central,"-31,24773185","-73,37599763",29-01-1965,si
+319,Cosayach - Soledad,Minera,"-22,4076122","-69,04604462",21-04-2009,si
+320,Nuveen Municipal High Income Opportunity Fund,Central,"-38,89603639","-72,87012397",18-10-1962,si
+321,"Herman Miller, Inc.",Vertedero,"-22,71390651","-70,05634205",03-12-1957,si
+322,III de Atacama Kozan,Minera,"-46,94661338","-72,1569849",20-08-1959,si
+323,Fidus Investment Corporation,Vertedero,"-45,46401685","-70,92528827",29-06-1952,si
+324,"Portola Pharmaceuticals, Inc.",Central,"-21,94825924","-74,05111571",29-01-1952,si
+325,Great Elm Capital Corp.,Vertedero,"-46,91888967","-68,86531922",23-06-2001,si
+326,Cordillera - Tenardita,Minera,"-47,84204942","-69,03536409",23-10-1966,si
+327,"Avenue Therapeutics, Inc.",Central,"-49,36704952","-69,43572153",01-05-2006,si
+328,Pullalli,Minera,"-40,15613517","-73,48525548",16-09-1982,si
+329,Los Bronces,Minera,"-20,63235417","-73,30770741",28-04-2010,si
+330,"Pepsico, Inc.",Central,"-44,60997938","-74,8371451",01-04-2016,si
+331,Candelaria,Minera,"-50,71227996","-71,28340564",24-10-1956,si
+332,West Corporation,Vertedero,"-33,60469188","-74,0102517",25-11-2004,si
+333,Pupunahue,Minera,"-25,24011737","-72,81762993",16-06-1979,si
+334,Dollar General Corporation,Vertedero,"-45,38138189","-70,64325644",13-11-2012,si
+335,Bright Scholar Education Holdings Limited,Central,"-32,29399007","-69,03379064",24-05-1988,si
+336,"Zynerba Pharmaceuticals, Inc.",Central,"-46,27776541","-69,97186244",29-06-1968,si
+337,CMP - Romeral,Minera,"-35,48098221","-71,1905625",10-07-1954,si
+338,Pinatolca,Minera,"-26,0446954","-74,04301221",18-04-1951,si
+339,Cohen & Steers Reit and Preferred Income Fund Inc,Vertedero,"-23,51683606","-72,25654139",08-05-1969,si
+340,B.O.S. Better Online Solutions,Vertedero,"-15,80399679","-70,97515952",12-08-1962,si
+341,Hamilton Lane Incorporated,Vertedero,"-47,66448994","-73,42405483",23-03-1950,si
+342,ENGlobal Corporation,Central,"-45,98702795","-71,43452191",12-02-1952,si
+343,Incyte Corporation,Central,"-38,30897238","-71,8913141",24-12-2002,si
+344,"Westbury Bancorp, Inc.",Central,"-23,06057125","-71,79959903",14-12-2014,si
+345,"HD Supply Holdings, Inc.",Vertedero,"-48,87088641","-69,69011616",07-01-2000,si
+346,BRF S.A.,Vertedero,"-17,40821544","-73,88095802",04-08-1951,si
+347,Zaldívar,Minera,"-33,73365319","-70,20110685",19-09-1958,si
+348,"Aspen Technology, Inc.",Vertedero,"-21,55807674","-68,4005989",04-03-2014,si
+349,"Entergy Louisiana, Inc.",Central,"-26,16436623","-70,02406051",19-04-2016,si
+350,Independence Holding Company,Central,"-39,39264851","-70,93554426",12-06-1987,si
+351,"Midland States Bancorp, Inc.",Central,"-34,33874333","-70,15395928",10-01-1998,si
+352,Patriot National Bancorp Inc.,Vertedero,"-53,41162037","-69,57491598",11-11-1974,si
+353,Talcuna,Minera,"-38,66487599","-73,03103802",19-08-1961,si
+354,"Blackhawk Network Holdings, Inc.",Vertedero,"-45,02246855","-75,49329275",02-08-1978,si
+355,Natl Westminster Pfd,Vertedero,"-36,51659763","-73,05176744",21-12-1963,si
+356,"AMC Entertainment Holdings, Inc.",Vertedero,"-32,15450946","-71,67009816",17-10-2001,si
+357,Salesforce.com Inc,Vertedero,"-49,80974272","-73,15258443",03-08-1976,si
+358,"Ocular Therapeutix, Inc.",Central,"-18,20712344","-70,24368891",30-06-1972,si
+359,"Hawkins, Inc.",Central,"-18,95193054","-70,32171306",06-10-1987,si
+360,Colico Sur,Minera,"-52,94103","-73,93599634",28-11-1987,si
+361,El Peñón,Minera,"-24,07753673","-71,66921793",06-07-1994,si
+362,CoreSite Realty Corporation,Central,"-17,62297702","-73,80370682",23-06-1963,si
+363,Western Alliance Bancorporation,Central,"-46,43216631","-70,49138637",29-09-1993,si
+364,Alliance National Municipal Income Fund Inc,Central,"-49,06597315","-68,1586654",09-11-1967,si
+365,iShares 20+ Year Treasury Bond ETF,Central,"-51,14222733","-70,51192856",10-05-1990,si
+366,Envision Healthcare Corporation,Vertedero,"-32,25602205","-73,70938746",19-11-1974,si
+367,SQM - Pampa Blanca,Minera,"-54,76566051","-70,09450066",11-10-1996,si
+368,Lomas Bayas,Minera,"-40,93401642","-70,91297411",06-05-1954,si
+369,"FairPoint Communications, Inc.",Vertedero,"-51,34889643","-71,7560449",30-12-1992,si
+370,Arlington Asset Investment Corp,Vertedero,"-52,1926009","-70,02288822",25-08-1997,si
+371,Andina,Minera,"-24,32664962","-73,57833754",22-07-1961,si
+372,Celite - Carol,Minera,"-45,99004483","-69,84882794",22-05-2001,si
+373,Tekla Healthcare Opportunies Fund,Vertedero,"-32,62408895","-69,7066942",28-12-2008,si
+374,American Homes 4 Rent,Central,"-36,60213838","-69,67858338",12-09-1963,si
+375,"support.com, Inc.",Central,"-43,05898659","-68,61561527",01-11-2000,si
+376,Nuveen Floating Rate Income Fund,Vertedero,"-16,75485413","-71,16848181",12-07-1966,si
+377,"Hurco Companies, Inc.",Central,"-53,75776763","-71,28707576",03-01-2001,si
+378,"Littelfuse, Inc.",Vertedero,"-38,5166006","-71,30822182",05-12-1969,si
+379,Kraton Corporation,Central,"-46,75479779","-71,15166944",19-06-1989,si
+380,Applied DNA Sciences Inc,Central,"-39,91924724","-73,30630723",08-12-1963,si
+381,Blackstone GSO Long Short Credit Income Fund,Central,"-53,59601847","-74,48174488",27-01-1984,si
+382,"Chegg, Inc.",Vertedero,"-40,36010157","-72,97417772",04-01-2015,si
+383,"Vectrus, Inc.",Vertedero,"-49,70049363","-68,28510012",19-09-1958,si
+384,Yahoo! Inc.,Central,"-50,86661529","-70,95263054",11-01-1961,si
+385,CVS Health Corporation,Vertedero,"-50,66032276","-69,03531431",08-08-1960,si
+386,"Commerce Bancshares, Inc.",Vertedero,"-47,76020288","-70,15008743",20-04-2016,si
+387,"Sarepta Therapeutics, Inc.",Vertedero,"-29,27055799","-70,38725328",07-01-1976,si
+388,Romeral,Minera,"-17,70796623","-73,70450394",18-05-1973,si
+389,Texas Pacific Land Trust,Vertedero,"-35,32999827","-72,00211361",18-04-1961,si
+390,Esterline Technologies Corporation,Central,"-37,71621836","-72,31495104",15-03-1984,si
+391,Silicon Motion Technology Corporation,Central,"-32,76764967","-71,47415533",17-11-2010,si
+392,Ceragon Networks Ltd.,Central,"-39,56394284","-69,75223962",16-05-1987,si
+393,"MiMedx Group, Inc",Central,"-51,55577341","-68,68117893",22-07-1954,si
+394,La Pepa,Minera,"-51,95141748","-71,22207609",21-07-2006,si
+395,Jerónimo,Minera,"-31,77103906","-71,45606195",09-01-1976,si
+396,Sierra Gorda,Minera,"-29,9037532","-69,20477898",16-09-1985,si
+397,"Waste Management, Inc.",Vertedero,"-38,91178905","-71,73239195",28-11-1997,si
+398,Andes Travertine,Minera,"-19,09271584","-69,47178711",31-10-1992,si
+399,Eagle Bulk Shipping Inc.,Vertedero,"-39,69256421","-73,14064804",17-11-1987,si
+400,SQM - Nueva Victoria,Minera,"-54,73005883","-70,54483001",21-08-1993,si
+401,"Dupont Fabros Technology, Inc.",Central,"-24,76562075","-73,72311695",02-04-1991,si
+402,Brookfield Global Listed Infrastructure Income Fund,Central,"-54,90481689","-72,99829869",06-05-2013,si
+403,"Impax Laboratories, Inc.",Central,"-48,59547852","-73,78895577",04-08-2004,si
+404,"Everspin Technologies, Inc.",Vertedero,"-39,18346766","-67,82215525",28-06-1994,si
+405,Ministro Hales,Minera,"-20,18310356","-69,91162467",27-04-1980,si
+406,SQM - Yumbes,Minera,"-46,80526688","-71,17699473",11-08-1978,si
+407,Nabriva Therapeutics AG,Central,"-44,5237386","-73,67953291",02-03-1986,si
+408,"OraSure Technologies, Inc.",Central,"-22,99538727","-69,27296898",22-03-1966,si
+409,Radomiro Tomic,Minera,"-33,39540661","-70,61147918",27-10-1981,si
+410,PrimeEnergy Corporation,Vertedero,"-51,91507329","-70,82429759",05-07-1966,si
+411,TICC Capital Corp.,Vertedero,"-46,65052586","-69,74814838",31-05-1956,si
+412,"Pinnacle Financial Partners, Inc.",Vertedero,"-32,01134156","-69,05264329",02-11-1980,si
+413,"HCA Healthcare, Inc.",Central,"-43,29197132","-71,95914899",30-08-1965,si
+414,Kopin Corporation,Vertedero,"-50,06681348","-71,288365",24-12-1978,si
+415,"Commercial Vehicle Group, Inc.",Central,"-35,62259333","-71,60991232",08-05-1991,si
+416,Can Can,Minera,"-49,83601833","-71,12592996",10-04-2016,si
+417,"The Travelers Companies, Inc.",Central,"-29,38267045","-70,83420453",06-11-1980,si
+418,BlackRock Municipal Target Term Trust Inc. (The),Vertedero,"-39,21827739","-71,02138421",31-03-1955,si
+419,Quebrada Blanca,Minera,"-50,57327772","-68,91799663",17-01-1987,si
+420,CMP - Cerro Negro Norte,Minera,"-30,27265127","-71,39812945",26-09-1961,si
+421,Nuveen Energy MLP Total Return Fund,Vertedero,"-52,81861719","-74,37026443",16-02-1972,si
+422,Global Partner Acquisition Corp.,Central,"-50,89461916","-70,77945522",06-02-2009,si
+423,3M Company,Central,"-47,32142188","-72,89968237",05-05-1950,si
+424,La Productora,Minera,"-45,92687329","-71,44643519",26-12-2018,si
+425,Cerro Imán,Minera,"-39,91479342","-70,71904433",12-08-1960,si
+426,SQM - María Elena,Minera,"-30,72064609","-69,19189683",08-02-1961,si
+427,"Biocept, Inc.",Vertedero,"-34,82049098","-73,76922988",13-08-1994,si
+428,Cummins Inc.,Central,"-29,09117012","-68,89030305",01-05-1956,si
+429,"Arista Networks, Inc.",Vertedero,"-47,95224885","-72,625789",24-09-1972,si
+430,"ILG, Inc",Vertedero,"-42,40115957","-69,27629579",24-04-1983,si
+431,Lambert,Minera,"-52,85135542","-71,64256207",05-07-1960,si
+432,Caleta El Cobre,Minera,"-35,86420182","-70,51754931",01-02-1984,si
+433,Fertón,Minera,"-47,48875104","-72,10622211",03-06-1955,si
+434,Moog Inc.,Vertedero,"-18,50708785","-70,02931389",28-11-1967,si
+435,"LM Funding America, Inc.",Vertedero,"-37,42139201","-74,82919835",14-11-1954,si
+436,"PrivateBancorp, Inc.",Vertedero,"-34,02539502","-69,21071103",05-09-1981,si
+437,Coirón,Minera,"-22,98723402","-73,14125365",05-10-1985,si
+438,Microsemi Corporation,Central,"-50,65226007","-72,76420235",17-03-1989,si
+439,Zion Oil & Gas Inc,Vertedero,"-34,75875536","-71,91521087",22-12-1972,si
+440,"Western Refining Logistics, LP",Central,"-49,9530586","-73,42275068",20-03-1966,si
+441,"Sierra Oncology, Inc.",Vertedero,"-42,85190241","-71,80551464",22-08-1994,si
+442,Dos Amigos,Minera,"-54,30040972","-71,1931064",01-08-1973,si
+443,Abeona Therapeutics Inc.,Vertedero,"-46,7224442","-70,81052512",18-02-1969,si
+444,Merus Labs International Inc.,Vertedero,"-24,61575569","-72,93952133",05-10-1976,si
+445,First Trust Multi-Asset Diversified Income Index Fund,Central,"-54,29723561","-70,04511056",07-04-2007,si
+446,Imax Corporation,Vertedero,"-53,1657583","-71,94698392",01-08-1968,si
+447,"H&R Block, Inc.",Vertedero,"-30,42590561","-68,63653997",11-06-1986,si
+448,Northrop Grumman Corporation,Vertedero,"-36,6766771","-73,89200318",16-04-1951,si
+449,Diana Shipping inc.,Vertedero,"-45,48591239","-70,96372918",25-02-2010,si
+450,"Spark Energy, Inc.",Vertedero,"-18,22174509","-69,20838488",01-07-1987,si

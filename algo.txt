@@ -1,0 +1,23 @@
+SELECT ongs.oid, result.nombre FROM ongs
+INNER JOIN dblink('grupo80', 'SELECT nombre FROM ong') as result(nombre varchar(100)) ON result.nombre LIKE CONCAT('%', ongs.nombre, '%') ORDER BY result.nombre;
+
+SELECT ongs.oid, ongs.nombre, result.nombre
+FROM ongs
+INNER JOIN dblink('grupo80', 'SELECT nombre FROM ong') as result(nombre varchar(100))
+ON result.nombre LIKE CONCAT(ongs.nombre, '_')
+UNION
+SELECT ongs.oid, result2.nombre
+FROM ongs
+NATURAL JOIN dblink('grupo80', 'SELECT nombre FROM ong') as result2(nombre varchar(100))
+ORDER BY ongs.oid;
+
+SELECT ongs.oid, ongs.nombre, result.nombre (FROM ongs INNER JOIN dblink('grupo80', 'SELECT nombre FROM ong') as result(nombre varchar(100)) ON result.nombre LIKE CONCAT(ongs.nombre, '_')) UNION SELECT ongs.oid, ongs.nombre. result.nombre FROM ongs NATURAL JOIN dblink('grupo80', 'SELECT nombre FROM ong') as result(nombre varchar(100));
+
+SELECT ongs.oid, result.nombre 
+FROM    ongs
+        INNER JOIN dblink('grupo80', 'SELECT nombre FROM ong') as result(nombre varchar(100))
+        ON result.nombre LIKE CONCAT(ongs.nombre, '_')
+UNION
+SELECT ongs.oid, result.nombre
+FROM ongs
+     NATURAL JOIN dblink('grupo80', 'SELECT nombre FROM ong') as result(nombre varchar(100));
