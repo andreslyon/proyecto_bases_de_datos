@@ -1,4 +1,4 @@
-<?php include('../../templates/header.html');   ?>
+<?php include('../../templates/header.php');   ?>
 
 <?php
 if(isset($_GET["search"]))
@@ -31,10 +31,15 @@ function filterTable($query)
 	$result -> execute();
   return $result;
 }
+
+$_SESSION["url_antes_de_login"] = "../navegacion/recursos.php";
+
 ?>
 
 
 <body class="bg-image">
+  
+<?php include('../login/login.php');   ?>
 
 <link href="//netdna.bootstrapcdn.com/bootstrap/3.0.0/css/bootstrap.min.css" rel="stylesheet" id="bootstrap-css">
 <script src="//netdna.bootstrapcdn.com/bootstrap/3.0.0/js/bootstrap.min.js"></script>

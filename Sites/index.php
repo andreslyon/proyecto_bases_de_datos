@@ -1,5 +1,9 @@
-<?php include('templates/header.html');   ?>
+<?php
+include('templates/header.php');
+$_SESSION["url_antes_de_login"] = "../../index.php";
+?>
   <body class="bg-image">
+    <?php include('views/login/login_from_index.php');   ?>
     <div class="container">
       <!-- Header -->
 

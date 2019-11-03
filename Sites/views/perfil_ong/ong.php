@@ -1,4 +1,4 @@
-<?php include('../../templates/header.html');   ?>
+<?php include('../../templates/header.php');   ?>
 
 <?php
 
@@ -34,6 +34,8 @@ $result = $search_result[0];
 $nombre = $result["nombre"];
 $pais = $result["pais"];
 $desc = $result["descripcion"];
+
+$_SESSION["url_antes_de_login"] = "../perfil_ong/ong.php?oid=$oid";
 
 ?>
 
@@ -73,6 +75,9 @@ $desc = $result["descripcion"];
 </head>
 
 <body class="bg-image">
+
+  <?php include('../login/login.php');   ?>
+
   <div class="container emp-profile">
 
       <div class="col-md-4">
@@ -107,22 +112,22 @@ $desc = $result["descripcion"];
           </div>
         </div>
         <!-- BOTONES -->
-        <div class="row">
-          <div class="col-md-4">
-            <a class= "btn btn-info btn-xs"></a>
-            VER
-          </div>
+        <!-- <div class="row"> -->
+          <!-- <div class="col-md-4"> -->
+            <!-- <a class= "btn btn-info btn-xs"></a> -->
+            <!-- VER -->
+          <!-- </div> -->
           <!-- SI ES QUE ESTA CONECTADO -->
-          <div class="col-md-4">
-            <a class= "btn btn-warning btn-xs"></a>
-            EDITAR
-          </div>
-          <div class="col-md-4">
-            <a class= "btn btn-danger btn-xs"></a>
-            ELIMINAR
-          </div>
+          <!-- <div class="col-md-4"> -->
+            <!-- <a class= "btn btn-warning btn-xs"></a> -->
+            <!-- EDITAR -->
+          <!-- </div> -->
+          <!-- <div class="col-md-4"> -->
+            <!-- <a class= "btn btn-danger btn-xs"></a> -->
+            <!-- ELIMINAR -->
+          <!-- </div> -->
           <!-- HASTA AQUI EL ESTAR CONECTADO -->
-        </div>
+        <!-- </div> -->
       </div>
 
       <div class="col-md-1" ></div>
@@ -139,12 +144,20 @@ $desc = $result["descripcion"];
                 <li class="nav-item">
                   <a class="nav-link active" id="recursos-tab" data-toggle="tab" href="#recursos" role="tab" aria-controls="profile" aria-selected="false">Recursos Solicitados</a>
                 </li>
-                <li class="nav-item">
-                  <a class="nav-link active" id="marchas-tab" data-toggle="tab" href="#marchas" role="tab" aria-controls="profile" aria-selected="false">Marchas</a>
-                </li>
-                <li class="nav-item">
-                  <a class="nav-link active" id="red-tab" data-toggle="tab" href="#red" role="tab" aria-controls="profile" aria-selected="false">Redes Sociales</a>
-                </li>
+                <?php
+                if($_SESSION["tipo_de_login"]=="ong")
+                {
+                  echo
+                  "
+                  <li class='nav-item'>
+                    <a class='nav-link active' id='marchas-tab' data-toggle='tab' href='#marchas' role='tab' aria-controls='profile' aria-selected='false'>Marchas</a>
+                  </li>
+                  <li class='nav-item'>
+                    <a class='nav-link active' id='red-tab' data-toggle='tab' href='#red' role='tab' aria-controls='profile' aria-selected='false'>Redes Sociales</a>
+                  </li>
+                  ";
+                }
+                ?>
               </ul>
 
             </div>
@@ -198,55 +211,62 @@ $desc = $result["descripcion"];
               <!-- SI NO -->
                 <!-- Debes estar conectado para ver los eventos -->
               <!-- HASTA AQUI EL CONDICIONAL -->
-
-              <div class="tab-pane fade" id="marchas" role="tabpanel" aria-labelledby="marchas-tab">
-                <!-- por cada evento y si esta vigente -->
-                <div class="table-wrapper-scroll-y my-custom-scrollbar">
+              <?php
+              if($_SESSION["tipo_de_login"]=="ong")
+              {
+                echo
+                "<div class='tab-pane fade' id='marchas' role='tabpanel' aria-labelledby='marchas-tab'>
                   <!-- por cada evento y si esta vigente -->
-                  <div class='row'>
-                    <div class='well col-md-12'>
-                      <div class='col-md-3'>
-                        <label>Marcha</label>
+                  <div class='table-wrapper-scroll-y my-custom-scrollbar'>
+                    <!-- por cada evento y si esta vigente -->
+                    <div class='row'>
+                      <div class='well col-md-12'>
+                        <div class='col-md-3'>
+                          <label>Marcha</label>
+                        </div>
+                        <div class='col-md-3'>
+                          <label>Fecha</label>
+                        </div>
+                        <div class='col-md-3'>
+                          <label>Lugar de reunion</label>
+                        </div>
+                        <div class='col-md-3'>
+                          <label>Presupuesto</label>
+                        </div>
                       </div>
-                      <div class='col-md-3'>
-                        <label>Fecha</label>
-                      </div>
-                      <div class='col-md-3'>
-                        <label>Lugar de reunion</label>
-                      </div>
-                      <div class='col-md-3'>
-                        <label>Presupuesto</label>
-                      </div>
-                    </div>
-                  </div>
+                    </div>";
 
-                  <?php include("_template_marcha_ong.php"); ?>
+                    include("_template_marcha_ong.php");
+                echo
+                  "</div>
                 </div>
-              </div>
-              <div class="tab-pane fade" id="red" role="tabpanel" aria-labelledby="red-tab">
-                <!-- por cada evento y si esta vigente -->
-                <div class="table-wrapper-scroll-y my-custom-scrollbar">
+                <div class='tab-pane fade' id='red' role='tabpanel' aria-labelledby='red-tab'>
                   <!-- por cada evento y si esta vigente -->
-                  <div class='row'>
-                    <div class='well col-md-12'>
-                      <div class='col-md-3'>
-                        <label>Red Social</label>
+                  <div class='table-wrapper-scroll-y my-custom-scrollbar'>
+                    <!-- por cada evento y si esta vigente -->
+                    <div class='row'>
+                      <div class='well col-md-12'>
+                        <div class='col-md-3'>
+                          <label>Red Social</label>
+                        </div>
+                        <div class='col-md-3'>
+                          <label>Fecha</label>
+                        </div>
+                        <div class='col-md-3'>
+                          <label>Tipo de contenido</label>
+                        </div>
+                        <div class='col-md-3'>
+                          <label>Presupuesto</label>
+                        </div>
                       </div>
-                      <div class='col-md-3'>
-                        <label>Fecha</label>
-                      </div>
-                      <div class='col-md-3'>
-                        <label>Tipo de contenido</label>
-                      </div>
-                      <div class='col-md-3'>
-                        <label>Presupuesto</label>
-                      </div>
-                    </div>
-                  </div>
+                    </div>";
 
-                  <?php include("_template_red_social_ong.php"); ?>
-                </div>
-              </div>
+                    include("_template_red_social_ong.php");
+                echo
+                  "</div>
+                </div>";
+              }
+              ?>
 
             </div>
           </div>

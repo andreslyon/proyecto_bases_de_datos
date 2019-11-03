@@ -1,4 +1,4 @@
-<?php include('../../templates/header.html');   ?>
+<?php include('../../templates/header.php');   ?>
 
 <?php
 
@@ -37,7 +37,7 @@ $region = "Region ".$row["region"];
 $area = $row["area_influencia_kms"];
 $descripcion = $row["descripcion"];
 
-
+$_SESSION["url_antes_de_login"] = "../perfil_recurso/recurso.php?rid=$rid";
 
 ?>
 
@@ -94,6 +94,9 @@ $descripcion = $row["descripcion"];
 </head>
 
 <body class="bg-image">
+
+  <?php include('../login/login.php');   ?>
+
   <div class="container emp-profile">
 
       <div class="col-md-4">

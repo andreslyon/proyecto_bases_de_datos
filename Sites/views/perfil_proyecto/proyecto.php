@@ -1,6 +1,22 @@
-<?php include('../../templates/header.html');   ?>
+<?php include('../../templates/header.php');   ?>
 
 <?php
+function es_socio($sid, $pid)
+{
+  $todos_los_socios = " SELECT sid, pid
+                        FROM pys
+                        WHERE sid='$sid' AND pid='$pid'";
+  $result = consultar($todos_los_socios) -> fetchALL();
+  $result = $result[0];
+  if ($result["sid"]=="")
+  {
+    return False;
+  }
+  else
+  {
+    return True;
+  }
+}
 
 function consultar($query)
 {
@@ -29,6 +45,7 @@ foreach ($search_result as $row)
   $region = "Region ".$row[9];
 }
 
+$_SESSION["url_antes_de_login"] = "../perfil_proyecto/proyecto.php?pid=$pid";
 
 ?>
 
@@ -85,13 +102,17 @@ foreach ($search_result as $row)
 </head>
 
 <body class="bg-image">
-  <div class="container emp-profile">
+
+  <?php include('../login/login.php');   ?>
+
+  <div class="container emp-profile" style="border-radius:25px;height:500px;">
 
       <div class="col-md-4">
         <div class="text-center">
           <h2 class="room-name">
           <?php
-          echo"$nombre"; ?>
+          echo"$nombre";
+          ?>
           </h2>
         </div>
         <br>
@@ -127,20 +148,38 @@ foreach ($search_result as $row)
           </div>
         </div>
         <!-- BOTONES -->
-        <div class="row">
-          <div class="col-md-4">
-            <a class= "btn btn-info btn-xs"></a>
-            VER
-          </div>
-          <!-- SI ES QUE ESTA CONECTADO -->
-          <div class="col-md-4">
-            <a class= "btn btn-warning btn-xs"></a>
-            EDITAR
-          </div>
-          <div class="col-md-4">
-            <a class= "btn btn-danger btn-xs"></a>
-            ELIMINAR
-          </div>
+        <div class='row'>
+        <?php
+        if ($_SESSION["tipo_de_login"]=="socio")
+        {
+          if (!es_socio($_SESSION["sid"], $pid))
+          {
+          echo
+            "<form style='margin-left:30%' action='_template_asociarse.php' method='post'>
+              <div class='btn' style='background:rgba(0,0,0,0.7);border-radius:25px'>
+                <a class= 'btn btn-info btn-xs' style='margin-bottom:5px;padding:3px 8px;'></a>
+                <input type='hidden' name='accion' value='asociarse'>
+                <button style='color:#eee;font-size:18px;background:rgba(255,255,255,0);' type='submit' name='pid' value='$pid'>
+                <b>Asociarse</b>
+                </button>
+              </div>
+            </form>";
+          }
+          else
+          {
+            echo
+              "<form style='margin-left:30%' action='_template_asociarse.php' method='post'>
+                <div class='btn' style='background:rgba(0,0,0,0.7);border-radius:25px'>
+                  <a class= 'btn btn-danger btn-xs' style='margin-bottom:5px;padding:3px 8px;'></a>
+                  <input type='hidden' name='accion' value='desasociarse'>
+                  <button style='color:#eee;font-size:18px;background:rgba(255,255,255,0);' type='submit' name='pid' value='$pid'>
+                  <b>Desasociarse</b>
+                  </button>
+                </div>
+              </form>";
+          }
+        }
+          ?>
           <!-- HASTA AQUI EL ESTAR CONECTADO -->
         </div>
       </div>
@@ -195,9 +234,8 @@ foreach ($search_result as $row)
       </div>
 
     </div>
+  <br>
 
-
-  <br><br>
   <div class = text-center>
     <form action="../navegacion/proyectos.php" method="get">
         <input type="submit" value="Volver">
