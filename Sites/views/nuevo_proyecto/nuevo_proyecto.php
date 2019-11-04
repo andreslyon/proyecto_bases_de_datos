@@ -4,7 +4,24 @@ function redirect($url)
   header("Location: $url");
   exit;
 }
+function consultar($query)
+{
+  require("../../config/conexion_impar.php");
+  $result = $db -> prepare($query);
+  $result -> execute();
+  return $result;
+}
+
 session_start();
+
+$todos_los_lugares = "SELECT lid, comuna, region
+                      FROM lugares
+                      ORDER BY region, comuna";
+
+$lugares = consultar($todos_los_lugares) -> fetchALL();
+
+
+
 ?>
 
 <style>
@@ -168,66 +185,147 @@ session_start();
 </style>
 
 <body>
-  <form class="login-wrap" action="_login_access_redirect.php" method="POST">
+  <form class="login-wrap" action="_agregar_proyecto.php" method="POST">
   	<div class="login-html">
-  		<input id="tab-1" type="radio" name="tab" class="sign-in" checked><label for="tab-1" class="tab">Socio</label>
-      <input id="tab-2" type="radio" name="tab" class="sign-up"><label for="tab-2" class="tab">ONG</label>
+      <label  for='user' class='label' style="font-size:25px;color:rgb(255,255,255)">Nuevo Proyecto</label>
+      <hr>
+      <?php
+      if (isset($_SESSION["crear_proyecto_err"]))
+      {
+        $err = $_SESSION["crear_proyecto_err"];
+        echo"
+        <div style='color:rgb(255,100,100)' class='invalid-feedback'>Error al crear proyecto, $err.</div>
+            ";
+      }
+      ?>
+      <br><br>
+  		<input id="tab-1" type="radio" name="tab" class="sign-in" checked><label for="tab-1" class="tab">Detalles</label>
+      <input id="tab-2" type="radio" name="tab" class="sign-up"><label for="tab-2" class="tab">Ubicacion</label>
 
       <div class="login-form">
-        php
+        <?php
         if ($_SESSION["tipo_de_login"]=="socio")
         {
-          echo"
-          <div class='sign-in-htm'>
-            <div class='group'>
-              <label  for='user' class='label'>Nombre</label>
-              <input name='socio_nombre' id='user' type='text' class='input'>
+          if (!isset($_SESSION["crear_proyecto_err"]))
+          {
+            echo"
+            <div class='sign-in-htm'>
+              <div class='group'>
+                <label  for='user' class='label'>Nombre</label>
+                <input name='nombre' id='user' type='text' class='input'>
+              </div>
+              <div class='group'>
+                <label for='pass' class='label'>Tipo de Proyecto</label>
+                <select name='tipo' id='pass' type='text' class='input'>
+                  <option value='Central' style='color:rgb(0,0,0)'>Central</option>
+                  <option value='Minera' style='color:rgb(0,0,0)'>Minera</option>
+                  <option value='Vertedero' style='color:rgb(0,0,0)'>Vertedero</option>
+                </select>
+              </div>
+              <div class='group'>
+                <label  for='user' class='label'>Fecha de apertura</label>
+                <input name='fecha' id='user' type='date' class='input'>
+              </div>
+              <div class='group'>
+                <input id='check' type='checkbox' class='check' checked name='operativo'>
+                <label for='check'><span class='icon'></span> Operativo</label>
+              </div>
             </div>
-            <div class='group'>
-              <label for='pass' class='label'>Apellido</label>
-              <input name='socio_apellido' id='pass' type='text' class='input'>
+
+            <div class='sign-up-htm'>
+              <div class='group'>
+                <label  for='user' class='label'>Region - Comuna</label>
+                <select name='lid' id='pass' type='text' class='input'>";
+                foreach ($lugares as $lugar)
+                {
+                  $opt_lid = $lugar["lid"];
+                  $opt_comuna = $lugar["comuna"];
+                  $opt_region = $lugar["region"];
+                  echo  "<option value='$opt_lid' style='color:rgb(0,0,0);'>$opt_region - $opt_comuna</option>
+                          ";
+                }
+                echo"
+                </select>
+              </div>
+              <div class='group'>
+                <label  for='user' class='label'>Geolocalizacion:</label>
+                <label  for='user' class='label'>lat</label>
+                <input name='lat' id='user' type='number' class='input'>
+                <label  for='user' class='label'>long</label>
+                <input name='long' id='user' type='number' class='input'>
+              </div>
+              <div class='group'>
+                <button name='crear_proyecto' type='submit' class='button' value='True'>Crear Proyecto</button>
+              </div>
             </div>
-            <div class='group'>
-              <label for='pass' class='label'>Password</label>
-              <input name='socio_password' id='pass' type='password' class='input' data-type='password'>
+            ";
+          }
+          else
+          {
+            unset($_SESSION["crear_proyecto_err"]);
+            echo"
+            <div class='sign-in-htm'>
+              <div class='group'>
+                <label  for='user' class='label'>Nombre</label>
+                <input name='nombre' id='user' type='text' class='input' style='background:rgba(255,100,100,.4);'>
+              </div>
+              <div class='group'>
+                <label for='pass' class='label'>Tipo de Proyecto</label>
+                <select name='tipo' id='pass' type='text' class='input' style='background:rgba(255,100,100,.4);'>
+                  <option value='Central' style='color:rgb(0,0,0)'>Central</option>
+                  <option value='Minera' style='color:rgb(0,0,0)'>Minera</option>
+                  <option value='Vertedero' style='color:rgb(0,0,0)'>Vertedero</option>
+                </select>
+              </div>
+              <div class='group'>
+                <label  for='user' class='label'>Fecha de apertura</label>
+                <input name='fecha' id='user' type='date' class='input' style='background:rgba(255,100,100,.4);'>
+              </div>
+              <div class='group'>
+                <input id='check' type='checkbox' class='check' checked name='operativo'>
+                <label for='check'><span class='icon'></span> Operativo</label>
+              </div>
             </div>
-            <div class='group'>
-              <input id='check' type='checkbox' class='check' checked>
-              <label for='check'><span class='icon'></span> Recordarme</label>
+
+            <div class='sign-up-htm'>
+              <div class='group'>
+                <label  for='user' class='label'>Region - Comuna</label>
+                <select name='lid' id='pass' type='text' class='input' style='background:rgba(255,100,100,.4);'>";
+                foreach ($lugares as $lugar)
+                {
+                  $opt_lid = $lugar["lid"];
+                  $opt_comuna = $lugar["comuna"];
+                  $opt_region = $lugar["region"];
+                  echo  "<option value='$opt_lid' style='color:rgb(0,0,0);'>$opt_region - $opt_comuna</option>
+                          ";
+                }
+                echo"
+                </select>
+              </div>
+              <div class='group'>
+                <label  for='user' class='label'>Geolocalizacion:</label>
+                <label  for='user' class='label'>lat</label>
+                <input name='lat' id='user' type='number' class='input' style='background:rgba(255,100,100,.4);'>
+                <label  for='user' class='label'>long</label>
+                <input name='long' id='user' type='number' class='input' style='background:rgba(255,100,100,.4);'>
+              </div>
+              <div class='group'>
+                <button name='crear_proyecto' type='submit' class='button' value='True'>Crear Proyecto</button>
+              </div>
             </div>
-            <div class='group'>
-              <button name='tipo_de_login' type='submit' class='button' value='socio'>login</button>
-            </div>
-          </div>
-          
-          <div class='sign-up-htm'>
-            <div class='group'>
-              <label  for='user' class='label'>Nombre de la ONG</label>
-              <input name='ong_nombre' id='user' type='text' class='input'>
-            </div>
-            <div class='group'>
-              <label for='pass' class='label'>Password</label>
-              <input name='ong_password' id='pass' type='password' class='input' data-type='password'>
-            </div>
-            <div class='group'>
-              <input id='check' type='checkbox' class='check' checked>
-              <label for='check'><span class='icon'></span> Recordarme</label>
-            </div>
-            <div class='group'>
-              <button name='tipo_de_login' type='submit' class='button' value='ong'>login</button>
-            </div>
-          </div>
-          ";
+            ";
+          }
+
         }
         else
         {
           if(isset($_SESSION["current_page_url"]))
           {
-            redirect($_SESSION["current_page_url");
+            redirect($_SESSION["current_page_url"]);
           }
           else
           {
-            redirect("action='../../index.php");
+            redirect('../../index.php');
           }
 
         }
