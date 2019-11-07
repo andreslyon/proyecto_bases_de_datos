@@ -1,4 +1,4 @@
-<?php include('../../templates/header.html');   ?>
+<?php include('../../templates/header.php');   ?>
 
 <?php
 if(isset($_POST["search"]))

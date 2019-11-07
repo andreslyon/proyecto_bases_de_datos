@@ -1,4 +1,4 @@
-<?php include('../../templates/header.html');   ?>
+<?php include('../../templates/header.php');   ?>
 
 <?php
 if(isset($_GET["search"]))
@@ -17,7 +17,7 @@ if(isset($_GET["search"]))
                   FROM  ongs
                         NATURAL JOIN dblink('dbname=grupo80 user=grupo80 password=grupo80', 'SELECT nombre, pais FROM ong') AS grupo80(nombre varchar(100), pais varchar(100))
                   ) AS Foo
-            WHERE nombre LIKE '%$nameToSearch%'
+            WHERE LOWER(nombre) LIKE LOWER('%$nameToSearch%')
             ORDER BY pais
           ";
 
@@ -49,11 +49,16 @@ function filterTable($query)
 	$result -> execute();
   return $result;
 }
+
+$_SESSION["current_page_url"] = "../navegacion/ongs.php";
+
 ?>
 
 
 
 <body class="bg-image">
+
+<?php include('../login/login.php');   ?>
 
 <link href="//netdna.bootstrapcdn.com/bootstrap/3.0.0/css/bootstrap.min.css" rel="stylesheet" id="bootstrap-css">
 <script src="//netdna.bootstrapcdn.com/bootstrap/3.0.0/js/bootstrap.min.js"></script>

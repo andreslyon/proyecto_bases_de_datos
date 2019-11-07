@@ -1,4 +1,4 @@
-<?php include('../../templates/header.html');   ?>
+<?php include('../../templates/header.php');   ?>
 
 <?php
 if(isset($_GET["search"]))
@@ -22,7 +22,7 @@ if(isset($_GET["search"]))
         $query = $query." NATURAL JOIN proyectosvertederos";
       }
     }
-  $query = $query." WHERE nombre LIKE '%".$nameToSearch."%'";
+  $query = $query." WHERE LOWER(nombre) LIKE LOWER('%".$nameToSearch."%')";
 
   $search_result = filterTable($query) -> fetchALL();
 }
@@ -38,10 +38,15 @@ function filterTable($query)
 	$result -> execute();
   return $result;
 }
+
+$_SESSION["current_page_url"] = "../navegacion/proyectos.php";
+
 ?>
 
 
 <body class="bg-image">
+
+<?php include('../login/login.php');   ?>
 
 <link href="//netdna.bootstrapcdn.com/bootstrap/3.0.0/css/bootstrap.min.css" rel="stylesheet" id="bootstrap-css">
 <script src="//netdna.bootstrapcdn.com/bootstrap/3.0.0/js/bootstrap.min.js"></script>
