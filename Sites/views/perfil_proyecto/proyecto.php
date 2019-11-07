@@ -45,7 +45,7 @@ foreach ($search_result as $row)
   $region = "Region ".$row[9];
 }
 
-$_SESSION["url_antes_de_login"] = "../perfil_proyecto/proyecto.php?pid=$pid";
+$_SESSION["current_page_url"] = "../perfil_proyecto/proyecto.php?pid=$pid";
 
 ?>
 
@@ -168,12 +168,21 @@ $_SESSION["url_antes_de_login"] = "../perfil_proyecto/proyecto.php?pid=$pid";
           else
           {
             echo
-              "<form style='margin-left:30%' action='_template_asociarse.php' method='post'>
+              "<form class='col-6' action='_template_asociarse.php' method='post'>
+                <div class='btn' style='background:rgba(0,0,0,0.7);border-radius:25px'>
+                  <a class= 'btn btn-warning btn-xs' style='margin-bottom:5px;padding:3px 8px;'></a>
+                  <input type='hidden' name='accion' value='desasociarse'>
+                  <button style='color:#eee;font-size:18px;background:rgba(255,255,255,0);' type='submit' name='pid' value='$pid'>
+                  <b>Desasociarse</b>
+                  </button>
+                </div>
+              </form>
+              <form class='col-6' action='_template_eliminar_proyecto.php' method='post'>
                 <div class='btn' style='background:rgba(0,0,0,0.7);border-radius:25px'>
                   <a class= 'btn btn-danger btn-xs' style='margin-bottom:5px;padding:3px 8px;'></a>
                   <input type='hidden' name='accion' value='desasociarse'>
                   <button style='color:#eee;font-size:18px;background:rgba(255,255,255,0);' type='submit' name='pid' value='$pid'>
-                  <b>Desasociarse</b>
+                  <b>Eliminar</b>
                   </button>
                 </div>
               </form>";
@@ -213,6 +222,23 @@ $_SESSION["url_antes_de_login"] = "../perfil_proyecto/proyecto.php?pid=$pid";
               <div class="tab-pane fade" id="recursos" role="tabpanel" aria-labelledby="recursos-tab">
                 <div class="table-wrapper-scroll-y my-custom-scrollbar">
                   <!-- por cada evento y si esta vigente -->
+                  <div class='row'>
+                    <div class='well col-md-12' style="background:rgba(225,150,75,0.9)">
+                      <div class='col-md-3'>
+                        <label>Numero</label>
+                      </div>
+                      <div class='col-md-3'>
+                        <label>Causa</label>
+                      </div>
+                      <div class='col-md-3'>
+                        <label>Status</label>
+                      </div>
+                      <div class='col-md-3'>
+                        <label></label>
+                      </div>
+                    </div>
+                  </div>
+
                   <?php include("_template_recurso_proyecto.php"); ?>
                 </div>
               </div>
@@ -224,6 +250,14 @@ $_SESSION["url_antes_de_login"] = "../perfil_proyecto/proyecto.php?pid=$pid";
                 <!-- por cada evento y si esta vigente -->
                 <div class="table-wrapper-scroll-y my-custom-scrollbar">
                   <!-- por cada evento y si esta vigente -->
+                  <div class='row'>
+                    <div class='well col-md-12' style="background:rgba(225,150,75,0.9)">
+                      <div class='col-md-12'>
+                        <label>Nombre Completo</label>
+                      </div>
+                    </div>
+                  </div>
+
                   <?php include("_template_socios_proyecto.php"); ?>
                 </div>
               </div>

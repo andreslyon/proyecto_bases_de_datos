@@ -1,16 +1,34 @@
 <?php
 session_start();
-function redirect_correcto()
+function redirect_correctos()
 {
-  if(isset($_SESSION["url_antes_de_login"]))
+  if(isset($_SESSION["current_page_url"]))
   {
-    $url = $_SESSION["url_antes_de_login"];
+    $url = $_SESSION["current_page_url"];
     header("Location: $url");
     exit;
   }
   else
   {
     header("Location: ../../index.php");
+    exit;
+  }
+}
+function redirect_correcto($tipo)
+{
+  if($tipo=="Vertedero")
+  {
+    header("Location: _agregar_vertedero.php");
+    exit;
+  }
+  else if ($tipo=="Central")
+  {
+    header("Location: _nueva_central.php");
+    exit;
+  }
+  else if ($tipo=="Minera")
+  {
+    header("Location: _nueva_minera.php");
     exit;
   }
 }
@@ -38,7 +56,7 @@ function verif_nombre($nombre)
                         WHERE nombre=$nombre";
   $nombre_result = consultar($todos_los_nombres) -> fetchALL();
   $nombre_result = $nombre_result[0];
-  if ($nombre_result["nombre"]!="")
+  if ($nombre_result[0]!="")
   {
     $_SESSION["crear_proyecto_err"] = "el nombre ya existe";
     redirect_incorrecto();
@@ -89,38 +107,24 @@ $tipo = $_POST["tipo"];
 $fecha = $_POST["fecha"];
 if (isset($_POST["operativo"]))
 {
-  $operativo = "Si";
+  $operativo = "si";
 }
 else
 {
-  $operativo = "No";
+  $operativo = "no";
 }
 $lat = $_POST["lat"];
 $long = $_POST["long"];
 $lid = $_POST["lid"];
-$sid = $_SESSION["sid"];
 
 verif_nombre($nombre);
 verif_lat($lat);
 verif_long($long);
 verif_fecha($fecha);
 
-$query_quitar_foranea = "ALTER TABLE proyectos DROP CONSTRAINT proyectos_pid_fkey";
-consultar($query_quitar_foranea);
-$query_insert_proyectos = "INSERT INTO proyectos(nombre,tipo,latitud,longitud,operativo,fecha_apertura)
-                           VALUES('$nombre', '$tipo', '$lat', '$long', '$operativo', '$fecha')
-                           RETURNING pid";
-$result = consultar($query_insert_proyectos) -> fetchALL();
-$result = $result[0];
-$pid = $result[0];
-$query_insert_pyl = "INSERT INTO pyl VALUES('$pid', '$lid')";
-consultar($query_insert_pyl);
-$query_agregar_foranea = " ALTER TABLE proyectos
-                           ADD CONSTRAINT proyectos_pid_fkey
-                           FOREIGN KEY(pid) REFERENCES pyl(pid)
-                           ON UPDATE CASCADE ON DELETE CASCADE";
-$result = consultar($query_agregar_foranea) -> fetchALL();
-$query_asociar = "INSERT INTO pys VALUES('$pid','$sid')";
-consultar($query_asociar);
-redirect_correcto();
+$_SESSION["new_values"] = "'$nombre', '$tipo', '$lat', '$long', '$operativo', '$fecha'";
+$_SESSION["new_lid"] = $lid;
+
+redirect_correcto($tipo);
+
 ?>

@@ -17,7 +17,7 @@ if(isset($_GET["search"]))
                   FROM  ongs
                         NATURAL JOIN dblink('dbname=grupo80 user=grupo80 password=grupo80', 'SELECT nombre, pais FROM ong') AS grupo80(nombre varchar(100), pais varchar(100))
                   ) AS Foo
-            WHERE nombre LIKE '%$nameToSearch%'
+            WHERE LOWER(nombre) LIKE LOWER('%$nameToSearch%')
             ORDER BY pais
           ";
 
@@ -50,7 +50,7 @@ function filterTable($query)
   return $result;
 }
 
-$_SESSION["url_antes_de_login"] = "../navegacion/ongs.php";
+$_SESSION["current_page_url"] = "../navegacion/ongs.php";
 
 ?>
 

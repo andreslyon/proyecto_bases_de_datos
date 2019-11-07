@@ -272,23 +272,5 @@ session_start();
 
 
   <br><br>
-  <div class="row">
-    <div class="text-center" style="margin-left:45%;">
-      <?php
-      if(isset($_SESSION["current_page_url"]))
-      {
-        $url = $_SESSION["current_page_url"];
-        echo
-        "<form action='$url' method='get'>";
-      }
-      else
-      {
-        echo
-        "<form action='../../index.php' method='get'> ";
-      }
-      ?>
-          <input class="custom_volver" type="submit" value="Volver">
-      </form>
-    </div>
-  </div>
+  <?php include("../../templates/boton_volver.php"); ?>
 </body>

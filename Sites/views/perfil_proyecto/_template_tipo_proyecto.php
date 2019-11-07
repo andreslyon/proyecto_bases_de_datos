@@ -32,7 +32,7 @@ if($tipo == "Minera")
           <td class = 'text-center'>";
   foreach ($tipo_result as $min)
   {
-    echo " $min[0]";
+    echo " $min[0] |";
   }
   echo "</td>
         </tr>";

@@ -10,9 +10,9 @@ function consultar($query)
 
 function redirect()
 {
-  if(isset($_SESSION["url_antes_de_login"]))
+  if(isset($_SESSION["current_page_url"]))
   {
-    $url = $_SESSION["url_antes_de_login"];
+    $url = $_SESSION["current_page_url"];
     header("Location: $url");
     exit;
   }

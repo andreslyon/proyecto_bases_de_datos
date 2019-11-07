@@ -14,11 +14,11 @@ function consultar($query)
 
 session_start();
 
-$todos_los_lugares = "SELECT lid, comuna, region
-                      FROM lugares
-                      ORDER BY region, comuna";
+$todas_los_minerales = "SELECT mid, nombre
+                      FROM minerales
+                      ORDER BY nombre";
 
-$lugares = consultar($todos_los_lugares) -> fetchALL();
+$minerales = consultar($todas_los_minerales) -> fetchALL();
 
 
 
@@ -182,12 +182,17 @@ $lugares = consultar($todos_los_lugares) -> fetchALL();
     color:rgb(255,255,255);
     border-radius:20px;
   }
+  .my-custom-scrollbar {
+  position: relative;
+  height: 300px;
+  overflow: auto;
+  }
 </style>
 
 <body>
-  <form class="login-wrap" action="_agregar_proyecto.php" method="POST">
+  <form class="login-wrap" action="_agregar_minera.php" method="POST">
   	<div class="login-html">
-      <label  for='user' class='label' style="font-size:25px;color:rgb(255,255,255)">Nuevo Proyecto</label>
+      <label  for='user' class='label' style="font-size:25px;color:rgb(255,255,255)">Nueva Central</label>
       <hr>
       <?php
       if (isset($_SESSION["crear_proyecto_err"]))
@@ -200,7 +205,7 @@ $lugares = consultar($todos_los_lugares) -> fetchALL();
       ?>
       <br><br>
   		<input id="tab-1" type="radio" name="tab" class="sign-in" checked><label for="tab-1" class="tab">Detalles</label>
-      <input id="tab-2" type="radio" name="tab" class="sign-up"><label for="tab-2" class="tab">Ubicacion</label>
+      <input id="tab-2" type="radio" name="tab" class="sign-up"><label for="tab-2" class="tab"></label>
 
       <div class="login-form">
         <?php
@@ -211,54 +216,23 @@ $lugares = consultar($todos_los_lugares) -> fetchALL();
             echo"
             <div class='sign-in-htm'>
               <div class='group'>
-                <label  for='user' class='label'>Nombre</label>
-                <input name='nombre' id='user' type='text' class='input'>
-              </div>
-              <div class='group'>
-                <label for='pass' class='label'>Tipo de Proyecto</label>
-                <select name='tipo' id='pass' type='text' class='input'>
-                  <option value='Central' style='color:rgb(0,0,0)'>Central</option>
-                  <option value='Minera' style='color:rgb(0,0,0)'>Minera</option>
-                  <option value='Vertedero' style='color:rgb(0,0,0)'>Vertedero</option>
-                </select>
-              </div>
-              <div class='group'>
-                <label  for='user' class='label'>Fecha de apertura</label>
-                <input name='fecha' id='user' type='date' class='input'>
-              </div>
-              <div class='group'>
-                <input id='check' type='checkbox' class='check' checked name='operativo'>
-                <label for='check'><span class='icon'></span> Operativo</label>
-              </div>
-            </div>
+                <label for='pass' class='label'>Minerales que extrae:</label>
+                  <div class='table-wrapper-scroll-y my-custom-scrollbar'>";
+                    foreach ($minerales as $mineral)
+                    {
+                      $mineral_nombre = $mineral["nombre"];
+                      $mineral_mid = $mineral["mid"];
 
-            <div class='sign-up-htm'>
-              <div class='group'>
-                <label  for='user' class='label'>Region - Comuna</label>
-                <select name='lid' id='pass' type='text' class='input'>";
-                foreach ($lugares as $lugar)
-                {
-                  $opt_lid = $lugar["lid"];
-                  $opt_comuna = $lugar["comuna"];
-                  $opt_region = $lugar["region"];
-                  echo  "<option value='$opt_lid' style='color:rgb(0,0,0);'>$opt_region - $opt_comuna</option>
-                          ";
-                }
-                echo"
-                </select>
+                      echo  "<input id='pass' type='checkbox' name='mids[]' value='$mineral_mid' >$mineral_nombre<br><br>
+                            ";
+                    }
+                    echo
+                "</div>
               </div>
               <div class='group'>
-                <label  for='user' class='label'>Geolocalizacion:</label>
-                <label  for='user' class='label'>lat</label>
-                <input name='lat' id='user' type='number' class='input'>
-                <label  for='user' class='label'>long</label>
-                <input name='long' id='user' type='number' class='input'>
+                <button name='crear_proyecto' type='submit' class='button' value='True'>Crear Minera</button>
               </div>
-              <div class='group'>
-                <button name='crear_proyecto' type='submit' class='button' value='True'>Crear Proyecto</button>
-              </div>
-            </div>
-            ";
+            </div>";
           }
           else
           {
@@ -266,54 +240,23 @@ $lugares = consultar($todos_los_lugares) -> fetchALL();
             echo"
             <div class='sign-in-htm'>
               <div class='group'>
-                <label  for='user' class='label'>Nombre</label>
-                <input name='nombre' id='user' type='text' class='input' style='background:rgba(255,100,100,.4);'>
-              </div>
-              <div class='group'>
-                <label for='pass' class='label'>Tipo de Proyecto</label>
-                <select name='tipo' id='pass' type='text' class='input' style='background:rgba(255,100,100,.4);'>
-                  <option value='Central' style='color:rgb(0,0,0)'>Central</option>
-                  <option value='Minera' style='color:rgb(0,0,0)'>Minera</option>
-                  <option value='Vertedero' style='color:rgb(0,0,0)'>Vertedero</option>
-                </select>
-              </div>
-              <div class='group'>
-                <label  for='user' class='label'>Fecha de apertura</label>
-                <input name='fecha' id='user' type='date' class='input' style='background:rgba(255,100,100,.4);'>
-              </div>
-              <div class='group'>
-                <input id='check' type='checkbox' class='check' checked name='operativo'>
-                <label for='check'><span class='icon'></span> Operativo</label>
-              </div>
-            </div>
+                <label for='pass' class='label'>Energia que produce</label>";
 
-            <div class='sign-up-htm'>
-              <div class='group'>
-                <label  for='user' class='label'>Region - Comuna</label>
-                <select name='lid' id='pass' type='text' class='input' style='background:rgba(255,100,100,.4);'>";
-                foreach ($lugares as $lugar)
-                {
-                  $opt_lid = $lugar["lid"];
-                  $opt_comuna = $lugar["comuna"];
-                  $opt_region = $lugar["region"];
-                  echo  "<option value='$opt_lid' style='color:rgb(0,0,0);'>$opt_region - $opt_comuna</option>
+                  foreach ($minerales as $mineral)
+                  {
+                    $mineral_nombre = $mineral["nombre"];
+                    $mineral_mid = $mineral["mid"];
+
+                    echo  "<input id='pass' class='input' type='checkbox' name='mids[]' value='$mineral_mid' style='background:rgba(255,100,100,.4); />$mineral_nombre<br />
                           ";
-                }
-                echo"
-                </select>
-              </div>
+                  }
+
+                  echo
+              "</div>
               <div class='group'>
-                <label  for='user' class='label'>Geolocalizacion:</label>
-                <label  for='user' class='label'>lat</label>
-                <input name='lat' id='user' type='number' class='input' style='background:rgba(255,100,100,.4);'>
-                <label  for='user' class='label'>long</label>
-                <input name='long' id='user' type='number' class='input' style='background:rgba(255,100,100,.4);'>
+                <button name='crear_proyecto' type='submit' class='button' value='True'>Crear Minera</button>
               </div>
-              <div class='group'>
-                <button name='crear_proyecto' type='submit' class='button' value='True'>Crear Proyecto</button>
-              </div>
-            </div>
-            ";
+            </div>";
           }
 
         }

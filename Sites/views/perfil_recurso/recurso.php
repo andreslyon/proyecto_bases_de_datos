@@ -37,7 +37,7 @@ $region = "Region ".$row["region"];
 $area = $row["area_influencia_kms"];
 $descripcion = $row["descripcion"];
 
-$_SESSION["url_antes_de_login"] = "../perfil_recurso/recurso.php?rid=$rid";
+$_SESSION["current_page_url"] = "../perfil_recurso/recurso.php?rid=$rid";
 
 ?>
 
@@ -140,22 +140,22 @@ $_SESSION["url_antes_de_login"] = "../perfil_recurso/recurso.php?rid=$rid";
           </div>
         </div>
         <!-- BOTONES -->
-        <div class="row">
-          <div class="col-md-4">
-            <a class= "btn btn-info btn-xs"></a>
-            VER
-          </div>
+        <!-- <div class="row"> -->
+          <!-- <div class="col-md-4"> -->
+            <!-- <a class= "btn btn-info btn-xs"></a> -->
+            <!-- VER -->
+          <!-- </div> -->
           <!-- SI ES QUE ESTA CONECTADO -->
-          <div class="col-md-4">
-            <a class= "btn btn-warning btn-xs"></a>
-            EDITAR
-          </div>
-          <div class="col-md-4">
-            <a class= "btn btn-danger btn-xs"></a>
-            ELIMINAR
-          </div>
+          <!-- <div class="col-md-4"> -->
+            <!-- <a class= "btn btn-warning btn-xs"></a> -->
+            <!-- EDITAR -->
+          <!-- </div> -->
+          <!-- <div class="col-md-4"> -->
+            <!-- <a class= "btn btn-danger btn-xs"></a> -->
+            <!-- ELIMINAR -->
+          <!-- </div> -->
           <!-- HASTA AQUI EL ESTAR CONECTADO -->
-        </div>
+        <!-- </div> -->
       </div>
 
       <div class="col-md-1" ></div>
@@ -202,6 +202,14 @@ $_SESSION["url_antes_de_login"] = "../perfil_recurso/recurso.php?rid=$rid";
                 <!-- por cada evento y si esta vigente -->
                 <div class="table-wrapper-scroll-y my-custom-scrollbar">
                   <!-- por cada evento y si esta vigente -->
+                  <div class='row'>
+                    <div class='well col-md-12' style="background:rgba(225,150,75,0.9)">
+                      <div class='col-md-12'>
+                        <label>Nombre</label>
+                      </div>
+                    </div>
+                  </div>
+
                   <?php include("_template_ongs_recurso.php"); ?>
                 </div>
               </div>

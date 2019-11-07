@@ -10,8 +10,8 @@ if(isset($_GET["search"]))
     $query = "
               SELECT *
               FROM recursos
-              WHERE nombre LIKE '%".$nameToSearch."%'
-              AND causa_contaminante LIKE '%".$causaToSearch."%'
+              WHERE LOWER(nombre) LIKE LOWER('%".$nameToSearch."%')
+              AND LOWER(causa_contaminante) LIKE LOWER('%".$causaToSearch."%')
               ORDER BY nombre
               ";
     // $query = $query." WHERE nombre LIKE '%".$nameToSearch."%'";
@@ -32,13 +32,13 @@ function filterTable($query)
   return $result;
 }
 
-$_SESSION["url_antes_de_login"] = "../navegacion/recursos.php";
+$_SESSION["current_page_url"] = "../navegacion/recursos.php";
 
 ?>
 
 
 <body class="bg-image">
-  
+
 <?php include('../login/login.php');   ?>
 
 <link href="//netdna.bootstrapcdn.com/bootstrap/3.0.0/css/bootstrap.min.css" rel="stylesheet" id="bootstrap-css">

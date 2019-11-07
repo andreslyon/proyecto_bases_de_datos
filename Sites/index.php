@@ -1,6 +1,6 @@
 <?php
 include('templates/header.php');
-$_SESSION["url_antes_de_login"] = "../../index.php";
+$_SESSION["current_page_url"] = "../../index.php";
 ?>
   <body class="bg-image">
     <?php include('views/login/login_from_index.php');   ?>

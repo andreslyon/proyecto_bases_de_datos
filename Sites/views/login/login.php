@@ -19,7 +19,28 @@ function redirect($url)
     background:rgb(60,60,100);
     color:rgb(255,255,255);
     border-radius:20px;
+    margin-top: 10px;
+    margin-bottom: 10px;
   }
+
+  .botoncito_de_salir:hover{
+    color:inherit;
+    text-decoration:inherit;
+  }
+
+  .texto_botoncito{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    -moz-transform: translateX(-50%) translateY(-50%);
+    -webkit-transform: translateX(-50%) translateY(-50%);
+    transform: translateX(-50%) translateY(-50%);
+  }
+
+  .boton_icono{
+    margin-top: 10px;
+  }
+
 </style>
 
 <div style="margin-left:60%;margin-right:10%">
@@ -30,29 +51,34 @@ function redirect($url)
       $socio_nombre = $_SESSION["socio_nombre"];
       $socio_apellido = $_SESSION["socio_apellido"];
       echo "
-            <form class='botoncito_de_login' align='center' action='../login/_login_exit_redirect.php' method='post'>
+            <div class='botoncito_de_login' align='center' >
               <div class='row'>
-                <div class='col-8'>
+                <div class='col-7'>
                     Indentificado como socio,<br>
                     $socio_nombre $socio_apellido
                 </div>
-                <button class='btn col-4 botoncito_de_salir' type='submit' name='search' value='Filter'>Salir</button>
+                <a style='margin-bottom: 10px;background:#609136;border: 0px solid #444;box-shadow: 2.5px 2.5px 4px #000000;' href='../nuevo_proyecto/nuevo_proyecto.php' class='btn btn-xs btn-info col-2 boton_icono'><span class='glyphicon glyphicon-plus'></span> Proyecto</a>
+                <a style='margin-bottom:10px;margin-left:10px;margin-right:10px;' href='../login/_login_exit_redirect.php' class='btn btn-xs btn-danger col-2 boton_icono'><span class='glyphicon glyphicon-log-out'></span> Salir</a>
+                <div class='col-1'></div>
               </div>
-            </form>";
+            </div>";
     }
     else if ($_SESSION["tipo_de_login"]=="ong")
     {
       $ong_nombre = $_SESSION["ong_nombre"];
+      $ong_oid = $_SESSION["oid"];
       echo "
-            <form class='botoncito_de_login' align='center' action='../login/_login_exit_redirect.php' method='post'>
+            <div class='botoncito_de_login' align='center' >
               <div class='row'>
-                <div class='col-8'>
+                <div class='col-7'>
                     Indentificado como ONG,<br>
                     $ong_nombre
                 </div>
-                <button class='btn col-4 botoncito_de_salir' type='submit' name='search' value='Filter'>Salir</button>
+                <a style='margin-bottom: 10px;background:#609136;border: 0px solid #444;box-shadow: 2.5px 2.5px 4px #000000;' href='../perfil_ong/ong.php?oid=$ong_oid' class='btn btn-xs btn-info col-2 boton_icono'><span class='glyphicon glyphicon-home'></span> Perfil</a>
+                <a style='margin-bottom:10px;margin-left:10px;margin-right:10px;' href='../login/_login_exit_redirect.php' class='btn btn-xs btn-danger col-2 boton_icono'><span class='glyphicon glyphicon-log-out'></span> Salir</a>
+                <div class='col-1'></div>
               </div>
-            </form>";
+            </div>";
     }
     else
     {
